@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="InitialControllerID" id="BYZ-38-t0r" customClass="ViewController" customModule="Web_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U1-NZ-Od5">
+                                <rect key="frame" x="20" y="164" width="80.333333333333329" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.50980392156862742" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzt-wQ-jDq">
+                                <rect key="frame" x="120.33333333333333" y="64" width="149.33333333333337" height="36"/>
+                                <color key="tintColor" red="0.9137254901960784" green="0.27058823529411763" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.058823529411764705" green="0.29803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.9137254901960784" green="0.27058823529411763" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="streaming on your schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKo-uD-Kuc">
+                                <rect key="frame" x="89.666666666666671" y="110" width="210.66666666666663" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.058823529411764705" green="0.29803921568627451" blue="0.45882352941176469" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.website.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o68-Fx-Ylx">
+                                <rect key="frame" x="20" y="189.66666666666666" width="350" height="34"/>
+                                <color key="tintColor" red="0.19607843137254902" green="0.50980392156862742" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.50980392156862742" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="URL" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="url"/>
+                                <connections>
+                                    <action selector="webAddressAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="PAh-y9-mdc"/>
+                                </connections>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iq0-oB-Fnr">
+                                <rect key="frame" x="321" y="759" width="51" height="31"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="darkModeToggleAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ie7-94-vxo"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkd-x1-kgk">
+                                <rect key="frame" x="20" y="764.66666666666663" width="83.666666666666671" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.50980392156862742" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I66-93-lqo">
+                                <rect key="frame" x="10" y="293.66666666666669" width="370" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="qkK-Bl-uga"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timePickerSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="0TM-cp-D5X"/>
+                                </connections>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cm4-0u-UbW">
+                                <rect key="frame" x="16" y="695" width="350" height="30"/>
+                                <color key="tintColor" red="0.058823529411764705" green="0.20392156862745098" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop Timer"/>
+                                <connections>
+                                    <action selector="stopTimerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O5x-Fc-97e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBD-2w-4XR">
+                                <rect key="frame" x="20" y="613" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="tz8-9U-3Qf">
+                                <rect key="frame" x="20" y="238.66666666666663" width="350" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mad-sH-Bdv">
+                                        <rect key="frame" x="0.0" y="0.0" width="106.66666666666667" height="40"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.50980392159999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="30 mins"/>
+                                        <connections>
+                                            <action selector="quickStartBtnsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8P-3o-voO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJZ-Ql-Svr">
+                                        <rect key="frame" x="121.66666666666666" y="0.0" width="106.66666666666666" height="40"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.50980392159999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="1 hour"/>
+                                        <connections>
+                                            <action selector="quickStartBtnsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hrh-AV-Vw7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mb-FA-KZB">
+                                        <rect key="frame" x="243.33333333333329" y="0.0" width="106.66666666666666" height="40"/>
+                                        <color key="backgroundColor" red="0.1960784314" green="0.50980392159999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="2 hours"/>
+                                        <connections>
+                                            <action selector="quickStartBtnsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzA-0f-Gjj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RHo-Yl-YJb"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaB-HF-8fh">
+                                <rect key="frame" x="20" y="458.66666666666669" width="350" height="40"/>
+                                <color key="backgroundColor" red="0.19607843137254902" green="0.50980392156862742" blue="0.72156862745098038" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XiI-cT-jeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <state key="normal" title="START TIMER">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GrM-UA-BwO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgi-At-oWg">
+                                <rect key="frame" x="350.66666666666669" y="159" width="19.333333333333314" height="22"/>
+                                <color key="tintColor" red="0.1960784314" green="0.50980392159999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="heart.text.square.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="recentBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HyF-uy-lA6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I66-93-lqo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0AM-mv-bHo"/>
+                            <constraint firstItem="PaB-HF-8fh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="1qJ-vF-WFb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o68-Fx-Ylx" secondAttribute="trailing" constant="20" id="1t3-JI-vBD"/>
+                            <constraint firstItem="RKo-uD-Kuc" firstAttribute="top" secondItem="mzt-wQ-jDq" secondAttribute="bottom" constant="10" id="4wE-lS-tcJ"/>
+                            <constraint firstItem="o68-Fx-Ylx" firstAttribute="top" secondItem="0U1-NZ-Od5" secondAttribute="bottom" constant="10" id="A0U-dT-f6o"/>
+                            <constraint firstItem="o68-Fx-Ylx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="D4W-6r-cTg"/>
+                            <constraint firstItem="bkd-x1-kgk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-25" id="D9P-Qb-s6W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hgi-At-oWg" secondAttribute="trailing" constant="20" id="DMd-tW-hue"/>
+                            <constraint firstAttribute="trailing" secondItem="tz8-9U-3Qf" secondAttribute="trailing" constant="20" id="Ft4-4X-Yio"/>
+                            <constraint firstItem="I66-93-lqo" firstAttribute="top" secondItem="tz8-9U-3Qf" secondAttribute="bottom" constant="15" id="IHk-pe-RYt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I66-93-lqo" secondAttribute="trailing" constant="10" id="KTk-Xs-XRE"/>
+                            <constraint firstItem="mzt-wQ-jDq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NdR-rr-pln"/>
+                            <constraint firstItem="cm4-0u-UbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="P1y-jt-pbx"/>
+                            <constraint firstItem="mzt-wQ-jDq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q5s-gB-3ih"/>
+                            <constraint firstItem="0U1-NZ-Od5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="UEN-VS-gxa"/>
+                            <constraint firstItem="Iq0-oB-Fnr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-20" id="aIx-K3-nVz"/>
+                            <constraint firstItem="0U1-NZ-Od5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aa8-Kr-cT1"/>
+                            <constraint firstItem="Hgi-At-oWg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="awn-k0-5wP"/>
+                            <constraint firstItem="PaB-HF-8fh" firstAttribute="top" secondItem="I66-93-lqo" secondAttribute="bottom" constant="15" id="cJr-On-jIO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cm4-0u-UbW" secondAttribute="trailing" constant="20" id="h6I-p1-9lu"/>
+                            <constraint firstItem="RKo-uD-Kuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hSM-Bl-evG"/>
+                            <constraint firstItem="tz8-9U-3Qf" firstAttribute="top" secondItem="o68-Fx-Ylx" secondAttribute="bottom" constant="15" id="ol5-QC-Cm5"/>
+                            <constraint firstItem="bkd-x1-kgk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pj4-6A-3hX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PaB-HF-8fh" secondAttribute="trailing" constant="20" id="ufM-ii-uBd"/>
+                            <constraint firstItem="tz8-9U-3Qf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vAh-AF-Mn7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iq0-oB-Fnr" secondAttribute="trailing" constant="20" id="yNC-oJ-8HD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="darkModeLabel" destination="bkd-x1-kgk" id="zn0-bb-rF6"/>
+                        <outlet property="darkModeToggle" destination="Iq0-oB-Fnr" id="TR2-dp-ZLu"/>
+                        <outlet property="quickStartBtn1" destination="mad-sH-Bdv" id="zRf-vF-gOz"/>
+                        <outlet property="quickStartBtn2" destination="IJZ-Ql-Svr" id="zH1-zW-mE3"/>
+                        <outlet property="quickStartBtn3" destination="6mb-FA-KZB" id="QKc-R8-Bet"/>
+                        <outlet property="recentBtn" destination="Hgi-At-oWg" id="c7K-yl-iUB"/>
+                        <outlet property="startBtn" destination="PaB-HF-8fh" id="xN1-Vc-co8"/>
+                        <outlet property="stopTimerBtn" destination="cm4-0u-UbW" id="VaZ-rX-7MP"/>
+                        <outlet property="timePicker" destination="I66-93-lqo" id="cHQ-KR-Ubu"/>
+                        <outlet property="timerView" destination="LBD-2w-4XR" id="u0w-gj-lN2"/>
+                        <outlet property="webAddressField" destination="o68-Fx-Ylx" id="H2f-db-ZcB"/>
+                        <outlet property="webAddressLabel" destination="0U1-NZ-Od5" id="xZQ-VZ-zDu"/>
+                        <outlet property="webTimerSubtitle" destination="RKo-uD-Kuc" id="yRZ-JP-YCU"/>
+                        <outlet property="webTimerTitle" destination="mzt-wQ-jDq" id="EhF-Av-Ziy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="137.91469194312796"/>
+        </scene>
+        <!--Modal Controller-->
+        <scene sceneID="F61-1i-Uem">
+            <objects>
+                <viewController storyboardIdentifier="ModalControllerID" id="0N3-NZ-I0i" customClass="ModalController" customModule="Web_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tGc-RO-vdF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="270" translatesAutoresizingMaskIntoConstraints="NO" id="A89-oX-d0N">
+                                <rect key="frame" x="15" y="44" width="359.33333333333331" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXM-LQ-O87">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelBtnPressed:" destination="0N3-NZ-I0i" eventType="touchUpInside" id="As7-pG-4mf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-f0-Yma">
+                                        <rect key="frame" x="318" y="0.0" width="41.333333333333314" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NGa-t1-ELz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="UXM-LQ-O87" id="t7Y-KO-HtY"/>
+                        <outlet property="timeLeft" destination="LQc-f0-Yma" id="DVd-lL-3od"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Utd-MZ-jvt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.69230769230762" y="138.6255924170616"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.text.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
